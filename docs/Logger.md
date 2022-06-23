@@ -37,7 +37,7 @@ Write a debug level log
 
 #### Defined in
 
-Logger.ts:28
+[Logger.ts:28](https://github.com/flexbase-eng/logger/blob/bce809d/src/Logger.ts#L28)
 
 ___
 
@@ -60,7 +60,7 @@ Write an error level log
 
 #### Defined in
 
-Logger.ts:10
+[Logger.ts:10](https://github.com/flexbase-eng/logger/blob/bce809d/src/Logger.ts#L10)
 
 ___
 
@@ -83,7 +83,7 @@ Write an information level log
 
 #### Defined in
 
-Logger.ts:22
+[Logger.ts:22](https://github.com/flexbase-eng/logger/blob/bce809d/src/Logger.ts#L22)
 
 ___
 
@@ -106,7 +106,7 @@ Write a trace level log
 
 #### Defined in
 
-Logger.ts:34
+[Logger.ts:34](https://github.com/flexbase-eng/logger/blob/bce809d/src/Logger.ts#L34)
 
 ___
 
@@ -129,4 +129,4 @@ Write a warning level log
 
 #### Defined in
 
-Logger.ts:16
+[Logger.ts:16](https://github.com/flexbase-eng/logger/blob/bce809d/src/Logger.ts#L16)

@@ -51,7 +51,7 @@ Write a debug level log
 
 #### Defined in
 
-ConsoleLogger.ts:17
+[ConsoleLogger.ts:16](https://github.com/flexbase-eng/logger/blob/bce809d/src/ConsoleLogger.ts#L16)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 ▸ **error**(`message`, ...`optionalParams`): `void`
 
-**`inherit`**
+Write an error level log
 
 #### Parameters
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-ConsoleLogger.ts:8
+[ConsoleLogger.ts:7](https://github.com/flexbase-eng/logger/blob/bce809d/src/ConsoleLogger.ts#L7)
 
 ___
 
@@ -105,7 +105,7 @@ Write an information level log
 
 #### Defined in
 
-ConsoleLogger.ts:14
+[ConsoleLogger.ts:13](https://github.com/flexbase-eng/logger/blob/bce809d/src/ConsoleLogger.ts#L13)
 
 ___
 
@@ -132,7 +132,7 @@ Write a trace level log
 
 #### Defined in
 
-ConsoleLogger.ts:20
+[ConsoleLogger.ts:19](https://github.com/flexbase-eng/logger/blob/bce809d/src/ConsoleLogger.ts#L19)
 
 ___
 
@@ -159,4 +159,4 @@ Write a warning level log
 
 #### Defined in
 
-ConsoleLogger.ts:11
+[ConsoleLogger.ts:10](https://github.com/flexbase-eng/logger/blob/bce809d/src/ConsoleLogger.ts#L10)
