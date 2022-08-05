@@ -20,3 +20,8 @@ export class ConsoleLogger implements Logger {
         console.trace(message, optionalParams);
     }
 }
+
+/**
+ * Represents an instance of ConsoleLogger
+ */
+export const consoleLogger = new ConsoleLogger();

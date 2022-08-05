@@ -1,56 +1,51 @@
 import { ConsoleLogger } from '../src/index';
 
-test("ConsoleLogger error", () => {
+test('ConsoleLogger error', () => {
     const logger = new ConsoleLogger();
 
-    const error = jest.spyOn(console, "error").mockImplementation(() => { });
+    const error = jest.spyOn(console, 'error');
 
-    logger.error("test");
+    logger.error('test');
 
-    expect(error).toBeCalledWith("test", []);
-
+    expect(error).toBeCalledWith('test', []);
 });
 
-test("ConsoleLogger warn", () => {
+test('ConsoleLogger warn', () => {
     const logger = new ConsoleLogger();
 
-    const warn = jest.spyOn(console, "warn").mockImplementation(() => { });
+    const warn = jest.spyOn(console, 'warn');
 
-    logger.warn("test");
+    logger.warn('test');
 
-    expect(warn).toBeCalledWith("test", []);
-
+    expect(warn).toBeCalledWith('test', []);
 });
 
-test("ConsoleLogger info", () => {
+test('ConsoleLogger info', () => {
     const logger = new ConsoleLogger();
 
-    const info = jest.spyOn(console, "info").mockImplementation(() => { });
+    const info = jest.spyOn(console, 'info');
 
-    logger.info("test");
+    logger.info('test');
 
-    expect(info).toBeCalledWith("test", []);
-
+    expect(info).toBeCalledWith('test', []);
 });
 
-test("ConsoleLogger debug", () => {
+test('ConsoleLogger debug', () => {
     const logger = new ConsoleLogger();
 
-    const debug = jest.spyOn(console, "debug").mockImplementation(() => { });
+    const debug = jest.spyOn(console, 'debug');
 
-    logger.debug("test");
+    logger.debug('test');
 
-    expect(debug).toBeCalledWith("test", []);
-
+    expect(debug).toBeCalledWith('test', []);
 });
 
-test("ConsoleLogger trace", () => {
+test('ConsoleLogger trace', () => {
     const logger = new ConsoleLogger();
 
-    const trace = jest.spyOn(console, "trace").mockImplementation(() => { });
+    const trace = jest.spyOn(console, 'trace');
 
-    logger.trace("test");
+    logger.trace('test');
 
-    expect(trace).toBeCalledWith("test", []);
-
+    expect(trace).toBeCalledWith('test', []);
 });
