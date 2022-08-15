@@ -8,6 +8,9 @@ export default {
   },
   {
     file: pkg.module, format: 'es',
+  },
+  {
+    file: pkg.umd, format: 'umd', name: 'flexbaseLogger'
   }],
   external: [
     ...Object.keys(pkg.dependencies || {}),
