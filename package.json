@@ -23,6 +23,7 @@
   "private": true,
   "devDependencies": {
     "@flexbase/packr": "^1.0.0",
+    "@rollup/plugin-typescript": "^9.0.2",
     "@types/jest": "^29.2.3",
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
@@ -34,7 +35,6 @@
     "moq.ts": "^9.0.2",
     "prettier": "^2.8.0",
     "rollup": "^3.4.0",
-    "rollup-plugin-typescript2": "^0.34.1",
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
     "tsconfig.json": "^1.0.11",
