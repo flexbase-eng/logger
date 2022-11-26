@@ -1,6 +1,6 @@
 {
   "name": "@flexbase/logger",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Flexbase logger interface",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -51,6 +51,7 @@
     "docs": "typedoc",
     "prepare": "yarn run build",
     "test": "jest --no-cache",
+    "test:ci": "jest --no-cache",
     "lint": "eslint 'src/**/*.{ts,tsx,json}'",
     "format": "prettier --write 'src/**/*.{ts,tsx,css,md,json}'",
     "packr": "packr"
