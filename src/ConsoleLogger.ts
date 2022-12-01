@@ -5,7 +5,7 @@ import { Logger } from './Logger';
  */
 export class ConsoleLogger implements Logger {
     private log(level: 'error' | 'warn' | 'info' | 'debug' | 'trace', message: any, optionalParams: any[]) {
-        optionalParams.length > 0 ? console[level](message, optionalParams) : console[level](message, optionalParams);
+        optionalParams.length > 0 ? console[level](message, optionalParams) : console[level](message);
     }
 
     error(message: any, ...optionalParams: any[]): void {

@@ -7,7 +7,7 @@ test('ConsoleLogger error', () => {
 
     logger.error('test');
 
-    expect(error).toBeCalledWith('test', []);
+    expect(error).toBeCalledWith('test');
 });
 
 test('ConsoleLogger warn', () => {
@@ -17,7 +17,7 @@ test('ConsoleLogger warn', () => {
 
     logger.warn('test');
 
-    expect(warn).toBeCalledWith('test', []);
+    expect(warn).toBeCalledWith('test');
 });
 
 test('ConsoleLogger info', () => {
@@ -27,7 +27,7 @@ test('ConsoleLogger info', () => {
 
     logger.info('test');
 
-    expect(info).toBeCalledWith('test', []);
+    expect(info).toBeCalledWith('test');
 });
 
 test('ConsoleLogger debug', () => {
@@ -37,7 +37,7 @@ test('ConsoleLogger debug', () => {
 
     logger.debug('test');
 
-    expect(debug).toBeCalledWith('test', []);
+    expect(debug).toBeCalledWith('test');
 });
 
 test('ConsoleLogger trace', () => {
@@ -47,5 +47,5 @@ test('ConsoleLogger trace', () => {
 
     logger.trace('test');
 
-    expect(trace).toBeCalledWith('test', []);
+    expect(trace).toBeCalledWith('test');
 });
