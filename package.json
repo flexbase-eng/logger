@@ -1,6 +1,6 @@
 {
   "name": "@flexbase/logger",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Flexbase logger interface",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",

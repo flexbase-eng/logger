@@ -4,20 +4,24 @@ import { Logger } from './Logger';
  * Represents a type that implements a console based logger
  */
 export class ConsoleLogger implements Logger {
+    private log(level: 'error' | 'warn' | 'info' | 'debug' | 'trace', message: any, optionalParams: any[]) {
+        optionalParams.length > 0 ? console[level](message, optionalParams) : console[level](message, optionalParams);
+    }
+
     error(message: any, ...optionalParams: any[]): void {
-        console.error(message, optionalParams);
+        this.log('error', message, optionalParams);
     }
     warn(message: any, ...optionalParams: any[]): void {
-        console.warn(message, optionalParams);
+        this.log('warn', message, optionalParams);
     }
     info(message: any, ...optionalParams: any[]): void {
-        console.info(message, optionalParams);
+        this.log('info', message, optionalParams);
     }
     debug(message: any, ...optionalParams: any[]): void {
-        console.debug(message, optionalParams);
+        this.log('debug', message, optionalParams);
     }
     trace(message: any, ...optionalParams: any[]): void {
-        console.trace(message, optionalParams);
+        this.log('trace', message, optionalParams);
     }
 }
 
