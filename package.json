@@ -1,6 +1,6 @@
 {
   "name": "@flexbase/logger",
-  "version": "1.4.3",
+  "version": "1.0.0",
   "description": "Flexbase logger interface",
   "author": "Flexbase",
   "license": "MIT",
