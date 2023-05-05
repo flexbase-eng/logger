@@ -1,51 +1,52 @@
+import { test, expect, vi } from 'vitest';
 import { ConsoleLogger } from '../src/index';
 
 test('ConsoleLogger error', () => {
-    const logger = new ConsoleLogger();
+  const logger = new ConsoleLogger();
 
-    const error = jest.spyOn(console, 'error');
+  const error = vi.spyOn(console, 'error');
 
-    logger.error('test');
+  logger.error('test');
 
-    expect(error).toBeCalledWith('test');
+  expect(error).toBeCalledWith('test');
 });
 
 test('ConsoleLogger warn', () => {
-    const logger = new ConsoleLogger();
+  const logger = new ConsoleLogger();
 
-    const warn = jest.spyOn(console, 'warn');
+  const warn = vi.spyOn(console, 'warn');
 
-    logger.warn('test');
+  logger.warn('test');
 
-    expect(warn).toBeCalledWith('test');
+  expect(warn).toBeCalledWith('test');
 });
 
 test('ConsoleLogger info', () => {
-    const logger = new ConsoleLogger();
+  const logger = new ConsoleLogger();
 
-    const info = jest.spyOn(console, 'info');
+  const info = vi.spyOn(console, 'info');
 
-    logger.info('test');
+  logger.info('test');
 
-    expect(info).toBeCalledWith('test');
+  expect(info).toBeCalledWith('test');
 });
 
 test('ConsoleLogger debug', () => {
-    const logger = new ConsoleLogger();
+  const logger = new ConsoleLogger();
 
-    const debug = jest.spyOn(console, 'debug');
+  const debug = vi.spyOn(console, 'debug');
 
-    logger.debug('test');
+  logger.debug('test');
 
-    expect(debug).toBeCalledWith('test');
+  expect(debug).toBeCalledWith('test');
 });
 
 test('ConsoleLogger trace', () => {
-    const logger = new ConsoleLogger();
+  const logger = new ConsoleLogger();
 
-    const trace = jest.spyOn(console, 'trace');
+  const trace = vi.spyOn(console, 'trace');
 
-    logger.trace('test');
+  logger.trace('test');
 
-    expect(trace).toBeCalledWith('test');
+  expect(trace).toBeCalledWith('test');
 });

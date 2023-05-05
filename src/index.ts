@@ -1,3 +1,3 @@
-export { Logger } from './Logger';
-export { ConsoleLogger, consoleLogger } from './ConsoleLogger';
-export { NoopLogger, noopLogger } from './NoopLogger';
+export { Logger } from './logger.js';
+export { ConsoleLogger, consoleLogger } from './console.logger.js';
+export { NoopLogger, noopLogger } from './noop.logger.js';

@@ -1,51 +1,52 @@
+import { test, expect, vi } from 'vitest';
 import { NoopLogger } from '../src/index';
 
 test('NoopLogger error', () => {
-    const logger = new NoopLogger();
+  const logger = new NoopLogger();
 
-    const error = jest.spyOn(logger, 'error');
+  const error = vi.spyOn(logger, 'error');
 
-    logger.error('test');
+  logger.error('test');
 
-    expect(error).toBeCalledWith('test');
+  expect(error).toBeCalledWith('test');
 });
 
 test('NoopLogger warn', () => {
-    const logger = new NoopLogger();
+  const logger = new NoopLogger();
 
-    const warn = jest.spyOn(logger, 'warn');
+  const warn = vi.spyOn(logger, 'warn');
 
-    logger.warn('test');
+  logger.warn('test');
 
-    expect(warn).toBeCalledWith('test');
+  expect(warn).toBeCalledWith('test');
 });
 
 test('NoopLogger info', () => {
-    const logger = new NoopLogger();
+  const logger = new NoopLogger();
 
-    const info = jest.spyOn(logger, 'info');
+  const info = vi.spyOn(logger, 'info');
 
-    logger.info('test');
+  logger.info('test');
 
-    expect(info).toBeCalledWith('test');
+  expect(info).toBeCalledWith('test');
 });
 
 test('NoopLogger debug', () => {
-    const logger = new NoopLogger();
+  const logger = new NoopLogger();
 
-    const debug = jest.spyOn(logger, 'debug');
+  const debug = vi.spyOn(logger, 'debug');
 
-    logger.debug('test');
+  logger.debug('test');
 
-    expect(debug).toBeCalledWith('test');
+  expect(debug).toBeCalledWith('test');
 });
 
 test('NoopLogger trace', () => {
-    const logger = new NoopLogger();
+  const logger = new NoopLogger();
 
-    const trace = jest.spyOn(logger, 'trace');
+  const trace = vi.spyOn(logger, 'trace');
 
-    logger.trace('test');
+  logger.trace('test');
 
-    expect(trace).toBeCalledWith('test');
+  expect(trace).toBeCalledWith('test');
 });
