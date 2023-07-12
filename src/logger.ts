@@ -1,35 +1,9 @@
-/**
- * Represents a type used to perform logging
- */
-export interface Logger {
-  /**
-   * Write an error level log
-   * @param message An object or string to log
-   * @param optionalParams Additional parameters to be logged
-   */
-  error(message: unknown, ...optionalParams: unknown[]): void;
-  /**
-   * Write a warning level log
-   * @param message An object or string to log
-   * @param optionalParams Additional parameters to be logged
-   */
-  warn(message: unknown, ...optionalParams: unknown[]): void;
-  /**
-   * Write an information level log
-   * @param message An object or string to log
-   * @param optionalParams Additional parameters to be logged
-   */
-  info(message: unknown, ...optionalParams: unknown[]): void;
-  /**
-   * Write a debug level log
-   * @param message An object or string to log
-   * @param optionalParams Additional parameters to be logged
-   */
-  debug(message: unknown, ...optionalParams: unknown[]): void;
-  /**
-   * Write a trace level log
-   * @param message An object or string to log
-   * @param optionalParams Additional parameters to be logged
-   */
-  trace(message: unknown, ...optionalParams: unknown[]): void;
+import { ILogger } from './logger.interface.js';
+
+export abstract class Logger implements ILogger {
+  abstract error(message: unknown, ...optionalParams: unknown[]): void;
+  abstract warn(message: unknown, ...optionalParams: unknown[]): void;
+  abstract info(message: unknown, ...optionalParams: unknown[]): void;
+  abstract debug(message: unknown, ...optionalParams: unknown[]): void;
+  abstract trace(message: unknown, ...optionalParams: unknown[]): void;
 }
